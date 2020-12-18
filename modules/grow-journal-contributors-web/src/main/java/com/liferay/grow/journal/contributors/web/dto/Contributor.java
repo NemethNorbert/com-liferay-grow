@@ -19,15 +19,14 @@ package com.liferay.grow.journal.contributors.web.dto;
  */
 public class Contributor {
 
-    public Contributor(String name) {
-        _name = name;
-    }
+	public Contributor(String name) {
+		_name = name;
+	}
 
-    public String getName() {
-        return _name;
-    }
+	public String getName() {
+		return _name;
+	}
 
-    private String _name;
+	private String _name;
 
-
-} 
+}

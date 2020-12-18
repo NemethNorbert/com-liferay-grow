@@ -24,7 +24,6 @@ map.put("modifierDate", journalContributorsDisplayContext.getModifiedDate());
 map.put("creator", creatorContributor.getName());
 map.put("creatorDate", journalContributorsDisplayContext.getCreateDate());
 map.put("contributorsList", journalContributorsDisplayContext.getContributors());
-
 %>
 
 <div class="react-component">
@@ -33,4 +32,3 @@ map.put("contributorsList", journalContributorsDisplayContext.getContributors())
 		module="js/Index.es"
 	/>
 </div>
-

@@ -27,14 +27,15 @@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
 <%@ page import="com.liferay.grow.journal.contributors.web.JournalContributorsDisplayContext" %><%@
 page import="com.liferay.grow.journal.contributors.web.dto.Contributor" %><%@
 page import="com.liferay.portal.kernel.theme.ThemeDisplay" %><%@
-page import="com.liferay.portal.kernel.util.WebKeys" %><%@
-page import="com.liferay.portal.kernel.util.HashMapBuilder" %><%@
-page import="java.util.HashMap" %><%@
+page import="com.liferay.portal.kernel.util.WebKeys" %>
+
+<%@ page import="java.util.HashMap" %><%@
 page import="java.util.Map" %>
 
 <%
-    JournalContributorsDisplayContext journalContributorsDisplayContext = new JournalContributorsDisplayContext(request);
-    Contributor creatorContributor = journalContributorsDisplayContext.getCreator();
-    Contributor modifierContributor = journalContributorsDisplayContext.getModifier();
-    ThemeDisplay themeDisplay = (ThemeDisplay) request.getAttribute(WebKeys.THEME_DISPLAY);
+	JournalContributorsDisplayContext journalContributorsDisplayContext = new JournalContributorsDisplayContext(request);
+
+	Contributor creatorContributor = journalContributorsDisplayContext.getCreator();
+	Contributor modifierContributor = journalContributorsDisplayContext.getModifier();
+	ThemeDisplay themeDisplay = (ThemeDisplay)request.getAttribute(WebKeys.THEME_DISPLAY);
 %>

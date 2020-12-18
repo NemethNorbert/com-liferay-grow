@@ -15,7 +15,6 @@
 package com.liferay.grow.journal.contributors.web.portlet;
 
 import com.liferay.grow.journal.contributors.web.constants.JournalContributorsPortletKeys;
-
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 
 import javax.portlet.Portlet;
